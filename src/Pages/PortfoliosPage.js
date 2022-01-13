@@ -10,6 +10,7 @@ const allButtons = ['All', ...new Set(portfolios.map(item => item.category))]
 function PortfoliosPage() {
     const [menuItem, setMenuItems] = useState(portfolios);
     const [button, setButtons] = useState(allButtons);
+    
 
     const filter = (button) => {
 
@@ -21,6 +22,7 @@ function PortfoliosPage() {
         const filteredData = portfolios.filter(item => item.category === button);
         setMenuItems(filteredData);
     }
+    
     return (
         <MainLayout>
             <Title title={'Portfolios'} span={'portfolios'} />
@@ -32,5 +34,6 @@ function PortfoliosPage() {
         </MainLayout>
     )
 }
+
 
 export default PortfoliosPage

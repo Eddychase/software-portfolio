@@ -3,6 +3,7 @@ import img2 from '../img/awards.png';
 import img3 from '../img/amazon.png';
 import img4 from '../img/travel.png';
 import img5 from '../img/html.png';
+import img6 from '../img/auto.png';
 
 const portfolios = [
     {
@@ -49,6 +50,15 @@ const portfolios = [
         link2: 'https://awwardse.herokuapp.com/',
         title: 'Awwwards Clone',
         text: 'First Django Project'
+    },
+    {
+        id: 6,
+        category: 'React',
+        image: img6,
+        link1: 'https://github.com/Eddychase/autoshop-site',
+        link2: 'https://autoshop-site.vercel.app/',
+        title: 'Autoshop Template',
+        text: 'Online Store template'
     }
 ]
 
